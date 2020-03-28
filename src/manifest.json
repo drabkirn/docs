@@ -1,0 +1,15 @@
+{
+  "short_name": "Drabkirn Docs",
+  "name": "The official documentation for everything drabkirn | @drabkirn",
+  "icons": [
+    {
+      "src": "./assets/favicon-32x32.png",
+      "sizes": "32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4a148c",
+  "background_color": "#ffffff"
+}

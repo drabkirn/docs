@@ -1,0 +1,23 @@
+{
+  "name": "docs",
+  "version": "1.0.2",
+  "description": "This repository serves as the core documentation for every cool thing that we build at Drabkirn.",
+  "private": true,
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Drabkirn",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/drabkirn/docs/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify-es": "^2.0.0",
+    "merge-stream": "^2.0.0"
+  }
+}
