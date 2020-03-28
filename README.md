@@ -7,6 +7,8 @@
 > The official documentation for everything drabkirn.
 
 <!-- Add languages, CI/CD, main frameworks used from shields.io. Example -->
+[![Ruby 2.6.5](https://img.shields.io/badge/Ruby-v2.6.5-red.svg)](https://www.ruby-lang.org/en/)
+[![Redcarpet 3.5](https://img.shields.io/badge/Redcarpet-v3.5-blue.svg)](https://github.com/vmg/redcarpet)
 [![Issues](https://img.shields.io/github/issues/drabkirn/docs.svg)](https://github.com/drabkirn/docs/issues)
 [![Issues closed](https://img.shields.io/github/issues-closed/drabkirn/docs.svg)](https://github.com/drabkirn/docs/issues)
 [![Pulls](https://img.shields.io/github/issues-pr/drabkirn/docs.svg)](https://github.com/drabkirn/docs/pulls)
