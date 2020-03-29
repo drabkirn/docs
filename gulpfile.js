@@ -7,13 +7,13 @@ let autoprefixer = require('gulp-autoprefixer');
 let merge = require('merge-stream');
 
 // Location to our files
-var globs = {
+let globs = {
   build: './build',
   css: './src/css/**/*.css',
   js: './src/js/**/*.js',
   html: './src/*.html',
   images: './src/assets/**',
-  manifest: './src/manifest.json'
+  seoFiles: ['./src/manifest.json', './src/robots.txt']
 };
 
 
@@ -25,11 +25,11 @@ gulp.task('clean', gulp.series(function() {
 
 
 // Move images to /build folder
-// Move manifest.json to /build folder
+// Move seoFiles to /build folder
 // You can also perform scaling and compression on images
 gulp.task('assets', gulp.series('clean', function() {
-  var images = gulp.src(globs.images).pipe(gulp.dest(globs.build + '/assets'));
-  var manifest = gulp.src(globs.manifest).pipe(gulp.dest(globs.build + '/'));
+  let images = gulp.src(globs.images).pipe(gulp.dest(globs.build + '/assets'));
+  let seoFiles = gulp.src(globs.seoFiles).pipe(gulp.dest(globs.build + '/'));
 
   return merge(images);
 }));

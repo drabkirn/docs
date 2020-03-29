@@ -1,3 +1,17 @@
+# Ignore bundler config.
+/.bundle
+
+# Node and yarn files to ignore
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# build folder
 build/
+
+# desityle folder for local stuff
 desityle/
-node_modules/
+
+# Ignore coverage
+/coverage
