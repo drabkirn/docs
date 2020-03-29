@@ -1,0 +1,9 @@
+ol li ul, ol li p, ul li pre, ul li pre code xmp, ol li pre, ol li pre code xmp {
+  font-size: 1em !important;
+}
+
+.code-inline {
+  color: var(--light-pink-color);
+  font-size: 1em;
+  font-family: Courier, 'New Courier', monospace;
+}

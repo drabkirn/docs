@@ -15,7 +15,9 @@ index_html_file = File.open('./src/index.html', 'w+')
 
 
 # MD redcarpet init
-md_renderer_options = {}
+md_renderer_options = {
+  hard_wrap: true
+}
 
 md_extensions = {
   fenced_code_blocks: true

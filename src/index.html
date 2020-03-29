@@ -56,7 +56,7 @@
     <header>
       <div class="header-intro-dsk">
         <div class="header-intro-dsk-logo col-dsk-4 align-center mt-70 mb-40">
-          <a href="/"><img src="./assets/drabkirn-logo-180x180.png" alt="Drabkirn Logo Header" /></a>
+          <a href="/" class="a-image"><img src="./assets/drabkirn-logo-180x180.png" alt="Drabkirn Logo Header" /></a>
         </div>
         <div class="header-intro-dsk-content drabkirn-header-intro-dsk-content col-dsk-8">
           <h1>Drabkirn</h1>
@@ -71,7 +71,7 @@
 
       <div class="header-intro-mob">
         <div class="header-intro-mob-logo align-center mt-30">
-          <a href="/"><img src="./assets/drabkirn-logo-180x180.png" alt="Drabkirn Logo Header" /></a>
+          <a href="/" class="a-image"><img src="./assets/drabkirn-logo-180x180.png" alt="Drabkirn Logo Header" /></a>
         </div>
         <div class="container header-intro-mob-content align-center">
         <h1>Drabkirn</h1>
@@ -87,14 +87,64 @@
 
     <section>
       <div class="container">
-        <h1>Intro</h1>
-<p>This is Intro file</p>
+        <h2 id=table-of-contents>Table of contents</h2><p><br />
+<ol class="ol-toc">
+  <li class="ol-toc-item">Introduction</li>
+  <li class="ol-toc-item">
+    <ol class="ol-toc-nested">
+      <li data-href="about-us">About Us</li>
+    </ol>
+  </li>
+  <li class="ol-toc-item">Desityle</li>
+  <li class="ol-toc-item">
+    <ol class="ol-toc-nested">
+      <li data-href="desityle-usage">Usage</li>
+      <li data-href="desityle-di">Development Installation</li>
+    </ol>
+  </li>
+</ol></p>
 <hr />
-<h1>Second</h1>
-<p>This is Second file</p>
+<h1 id=introduction>Introduction</h1><h2 id=about-us>About us</h2>
+<blockquote>
+<p>Create the world out of the things that you build. We build those things and will set them free. We also write thoughts and much more.</p></blockquote>
+<p>Our mission is to connect and build a free, open, and privacy-respected open-source world that can improve humans life and beyond. We believe in our saying, <strong><em>Human&#39;s power is their power, and not the brand&#39;s power.&quot;</em></strong></p><p class="fs-1"><br /></p><p>Our vision is to empower every person on this planet (and beyond) to use free, open and privacy-respected solutions, and we intend to connect with them to spread happiness.</p><p class="fs-1"><br /></p><p>We know our motto, mission, and vision are vague, but hey, does that even matter? Let&#39;s dive in straight on what we&#39;ve got for you:</p>
 <hr />
-<h1>Third</h1>
-<p>This is Third file</p>
+<h1 id=desityle>Desityle</h1>
+<blockquote>
+<p>Desityle is a sleek and straightforward DIY CSS library built from scratch with DIY(Do It Yourself) concept in mind.</p></blockquote>
+<p><span id="desityle-usage"></span></p><h2 id=usage>Usage</h2><p>You&#39;ve made an excellent decision to give desityle a try. It&#39;s super-duper easy to integrate desityle in your websites.</p><p class="fs-1"><br /></p><ol><li><p><strong>Using CDN:</strong></p><ul class="ul-circle"><li><p>Just include our CSS and JS CDN files in your <code class="code-inline">index.html</code>(or any other <code class="code-inline">.html</code> file):</p><pre class="pre-code"><span class="pre-code-span">html</span><code><xmp><link rel="stylesheet" href="https://unpkg.com/desityle@1.1.3/build/css/desityle.min.css" />
+
+<script src="https://unpkg.com/desityle@1.1.3/build/js/desityle.min.js"></script>
+</xmp></code></pre><p class="fs-1"><br /></p></li>
+</ul></li>
+<li><p><strong>Using in React or other JS Libraries/Frameworks:</strong></p><ul class="ul-circle"><li><p>First, install desityle using NPM or Yarn:</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ yarn add desityle@1.1.3
+  # or
+$ npm install desityle@1.1.3 --save
+</xmp></code></pre></li>
+<li><p>Then Import in your libraries:</p><pre class="pre-code"><span class="pre-code-span">javascript</span><code><xmp>import 'desityle/build/css/desityle.min.css';
+</xmp></code></pre></li>
+<li><p>Currently, there is no way to import JS using libraries/framework; we&#39;re actively working on it.</p></li>
+</ul></li>
+</ol><p><hr class="hr-center" /></p><p><span id="desityle-di"></span></p><h2 id=development-installation>Development Installation</h2><p>You can contribute to this project, but first, you&#39;ll need to set up your machine.</p><p class="fs-1"><br /></p><ol><li><p>Clone this repo and cd into it:</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ git clone https://github.com/drabkirn/desityle.git
+$ cd desityle
+</xmp></code></pre></li>
+<li><p>Install all dependencies:</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ yarn install --check-files
+</xmp></code></pre></li>
+<li><p>All our source code is located in <code class="code-inline">src/</code> folder.</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ cd src/
+</xmp></code></pre></li>
+<li><p>Make changes or tweak some bugs in this folder, meanwhile you can run a simple server to see your changes:</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>  # Example, to start on localhost:3002 or YOUR_IP:3002
+$ python -m SimpleHTTPServer 3002
+</xmp></code></pre></li>
+<li><p>After making changes, you can look the final look of your changes by building the app. We use <code class="code-inline">gulp</code> under the hood. This is exactly what our production users will see:</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ yarn build
+  # or
+$ npm run build
+</xmp></code></pre></li>
+<li><p>Serve you app from the build/ folder created by the above command.</p><pre class="pre-code"><span class="pre-code-span">bash</span><code><xmp>$ cd build
+  # Example, to start on localhost:3002 or YOUR_IP:3002
+$ python -m SimpleHTTPServer 3002
+</xmp></code></pre></li>
+<li><p>When you think eveything is right and working smooth and well, you can checkout our <a href="https://github.com/drabkirn/desityle/blob/master/CONTRIBUTING.md#contributing-to-drabkirn-desityle">contributing guide</a> to make a pull request.</p></li>
+</ol>
       </div>
     </section>
 
