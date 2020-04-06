@@ -1,6 +1,6 @@
 # Desityle
 
-> Desityle is a sleek and straightforward DIY CSS library built from scratch with DIY(Do It Yourself) concept in mind.
+> Desityle is a sleek and straightforward DIY CSS framework built from scratch with DIY(Do It Yourself) concept in mind.
 
 
 
@@ -15,9 +15,9 @@ You've made an excellent decision to give desityle a try. It's super-duper easy 
     - Just include our CSS and JS CDN files in your `index.html`(or any other `.html` file):
         
         ```html
-        <link rel="stylesheet" href="https://unpkg.com/desityle@1.1.3/build/css/desityle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/desityle@1.1.5/build/css/desityle.min.css" />
 
-        <script src="https://unpkg.com/desityle@1.1.3/build/js/desityle.min.js"></script>
+        <script src="https://unpkg.com/desityle@1.1.5/build/js/desityle.min.js"></script>
         ```
 <br />
 
@@ -25,9 +25,9 @@ You've made an excellent decision to give desityle a try. It's super-duper easy 
     - First, install desityle using NPM or Yarn:
       
         ```bash
-        $ yarn add desityle@1.1.3
+        $ yarn add desityle@1.1.5
           # or
-        $ npm install desityle@1.1.3 --save
+        $ npm install desityle@1.1.5 --save
         ```
     - Then Import in your libraries:
 
